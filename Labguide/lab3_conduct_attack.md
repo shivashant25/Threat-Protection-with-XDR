@@ -12,7 +12,7 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ## Architecture Diagram
 
-  ![Lab overview.](../media/lab02part1.png)
+  ![Lab overview.](./media/lab02part1.png)
 
 ### Task 1: Persistence Attack with Registry Key Add 
 
@@ -96,7 +96,7 @@ You are going to simulate the attacks that you will later use to detect and inve
     Start PowerShell.exe -file c2.ps1
     ```
     
-      ![Lab overview.](../media/cmd.png)
+      ![Lab overview.](./media/cmd.png)
    
     >**Note:** You will see DNS resolve errors. This is expected.
 
