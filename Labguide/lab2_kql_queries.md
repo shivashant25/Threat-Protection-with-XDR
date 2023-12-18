@@ -1,14 +1,11 @@
-## Part:1 Lab 09 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
+## Lab 01 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
 
 ## Lab scenario
 You are a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You are responsible for performing log data analysis to search for malicious activity, display visualizations, and perform threat hunting. To query log data, you use the Kusto Query Language (KQL).
 
->**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
-
 ## Lab objectives (Duration: 90 minutes)
  In this lab, you will perform the following:
 
-- Task 1: Create a Log Analytics Workspace
 - Task 2: Initialize the Microsoft Sentinel Workspace.
 - Task 3: Connect the Windows security event connector.
 - Task 4: Enable Microsoft Defender for Cloud
@@ -23,39 +20,16 @@ You are a Security Operations Analyst working at a company that is implementing 
 ## Architecture Diagram
 
   ![Picture 1](./media/part1lab09.png)
-
-### Task 1: Create a Log Analytics Workspace
-
-In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
-
-1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
-
-1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
-1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
-
-1. Select **+Create** from the command bar.
-
-1. Select "create new Resource Group" give the name **RG-Defender**.
-
-1. For the Name, enter something unique like **uniquenameDefender**.
-1. Select the default Region 
-
-1. Select **Review + Create**.
-
-1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
-    
-### Task 2: Initialize the Microsoft Sentinel Workspace.
+   
+### Task 1: Initialize the Microsoft Sentinel Workspace.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Create, In Add Microsoft Sentinel to a workspace page.
 
-1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+1. Select your existing workspace then select **Add**. This could take a few minutes.
 
-### Task 3: Connect the Windows security event connector.
+### Task 2: Connect the Windows security event connector.
 
 1. On the search bar type **Microsoft Sentinel** and select it
 
