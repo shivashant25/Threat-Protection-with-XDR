@@ -1,4 +1,4 @@
-## Part:1 Lab 04 - Create workbooks
+## Lab 04 - Create workbooks
 
 ## Lab scenario
 
