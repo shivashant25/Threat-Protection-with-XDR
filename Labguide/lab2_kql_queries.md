@@ -22,7 +22,7 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 ## Architecture Diagram
 
-  ![Picture 1](../media/part1lab09.png)
+  ![Picture 1](./media/part1lab09.png)
 
 ### Task 1: Create a Log Analytics Workspace
 
@@ -107,7 +107,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
 
-    ![Picture 1](../media/SC-200-img333.png)
+    ![Picture 1](./media/SC-200-img333.png)
 
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
 
@@ -145,14 +145,14 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
 
-    ![Picture 1](../media/image_29.png)
+    ![Picture 1](./media/image_29.png)
 
 ### Task 6: Create Microsoft Sentinel Training Lab Solution
 
 In this task, you will create microsoft sentinel training lab solution.
     
 1. In the search bar of the Azure Portal, type Microsoft Sentinal and select Microsoft Sentinel Training Lab Solution. 
-    ![Picture 1](../media/image_24.png)
+    ![Picture 1](./media/image_24.png)
 
 1. Click on create, select resource group and workspace.
 
@@ -180,7 +180,7 @@ In this task, you will access a Log Analytics environment where you can practice
 
 1. Next to the first record, select the **>** to expand the information for the row.
 
-    ![Picture 1](../media/SC-200-img-7.png)
+    ![Picture 1](./media/SC-200-img-7.png)
 
 ### Task 8: Run Basic KQL Statements
 
@@ -190,7 +190,7 @@ In this task, you will build basic KQL statements.
 
 1. Change the **Time range** to **Last hour** in the Query Window.
 
-    ![Picture 1](../media/SC-200-img8.png)
+    ![Picture 1](./media/SC-200-img8.png)
 
 1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
 
@@ -200,7 +200,7 @@ In this task, you will build basic KQL statements.
 
     >**Note**: It will taskes some time to reflect, you can move to other command check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**.
 
-    ![Picture 1](../media/SC-200-img9.png)
+    ![Picture 1](./media/SC-200-img9.png)
 
     >**Note**: It will taskes some time to reflect, you can move to other command check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**.
 
