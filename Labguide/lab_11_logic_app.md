@@ -1,4 +1,4 @@
-## Lab 09 - Integrate Logic App with Threat Protection and XDR
+## Lab 11 - Integrate Logic App with Threat Protection and XDR
 
 ## Lab scenario
 
@@ -14,8 +14,6 @@ The integration of a Logic App with Threat Protection involves configuring trigg
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
-
- ![](./media/SC200-Lab_Diagrams_Mod8_L1_Ex1.png)
 
 ## Exersise 1: Integrate Logic App with Threat Protection and XDR
 
