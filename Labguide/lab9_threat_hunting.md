@@ -1,4 +1,4 @@
-# Module 8 - Lab 1 - Threat Hunting using Notebooks with Microsoft Sentinel
+## Lab 09 - Threat Hunting using Notebooks with Microsoft Sentinel
 
 ## Lab scenario
 
@@ -269,5 +269,3 @@ In this lab, you have completed the following:
 - We created an NRT query rule.
 - We Created a Search.
 - Explore Notebooks
-
-## Proceed to Exercise 2
