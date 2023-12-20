@@ -1,4 +1,4 @@
-Lab 01 - Launch Sentinel Workspace
+## Lab 01 - Launch Sentinel Workspace
 
 ### Task 1: Reeview a Log Analytics Workspace
 
