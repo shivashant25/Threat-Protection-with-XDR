@@ -1,4 +1,4 @@
-## Lab 11 - Integrate Logic App with Threat Protection and XDR
+# Lab 11 - Integrate Logic App with Threat Protection and XDR
 
 ## Lab scenario
 
