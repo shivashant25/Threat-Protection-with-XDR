@@ -1,4 +1,4 @@
-## Lab - 02 Conduct attacks
+# Lab - 03 Conduct attacks
 
 ## Lab scenario
 
