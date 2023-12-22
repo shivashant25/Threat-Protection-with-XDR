@@ -4,7 +4,7 @@
 
 You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
 
-## Lab objectives (Duration: 30 minutes)
+## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Persistence Attack with Registry Key Add 
 - Task 2: Command and Control Attack with DNS
