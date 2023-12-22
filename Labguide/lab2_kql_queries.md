@@ -3,7 +3,7 @@
 ## Lab scenario
 You are a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You are responsible for performing log data analysis to search for malicious activity, display visualizations, and perform threat hunting. To query log data, you use the Kusto Query Language (KQL).
 
-## Lab objectives (Duration: 90 minutes)
+## Lab objectives
  In this lab, you will perform the following:
 
 - Task 2: Initialize the Microsoft Sentinel Workspace.
