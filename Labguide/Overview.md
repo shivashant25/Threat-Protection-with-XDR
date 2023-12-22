@@ -1,4 +1,4 @@
-# Thread Protection with XDR
+# Threat Protection with XDR
 
 ## Overview
 
