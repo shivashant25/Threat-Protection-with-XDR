@@ -101,7 +101,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. To unblock the document, navigate to its location in File Explorer. In File Explorer, right-click the document, and select Properties. In the General tab, mark the Unblock option under Security.   
 
-   ![Picture 1](../Media/SC-200-img21.png)  
+   ![Picture 1](../media/SC-200-img21.png)  
 
 1. Close the **Microsoft Word** and re-open from the File Explorer and enter the password as `WDATP!diy#` after re-opening click on **Enable Content** and click on **OK**. 
 
@@ -114,7 +114,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.  
 
-    ![Picture 1](../Media/SC-200-module6-ex2-img5.png). 
+    ![Picture 1](../media/SC-200-module6-ex2-img5.png). 
 
 1. At the Windows PowerShell, paste and run the provided script. A few seconds later, notepad.exe is started and the simulated attack code is injected into it. The simulated attack code attempts communication to an external IP address simulating the C&C server.
 
