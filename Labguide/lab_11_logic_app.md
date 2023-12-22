@@ -130,5 +130,7 @@ The integration of a Logic App with Threat Protection involves configuring trigg
 
 ## Review
 In this lab, you have completed the following:
-
-
+- Create a hunting query
+- Create a NRT query rule
+- Create a Search
+- Explore Notebooks
