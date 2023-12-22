@@ -16,8 +16,6 @@ In this lab, participants will explore a pre-configured Azure Sentinel workspace
  - Task 7: Customize Settings
  - Task 8: Simulated Attacks
  - Task 9: Investigate the Attacks
- 
-## Estimated timing: 60 minutes
 
 ### Exercise 1: Exploring a Pre-Created Azure Sentinel Workspace
 
