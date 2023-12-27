@@ -23,13 +23,13 @@ In this lab, participants will explore a pre-configured Azure Sentinel workspace
 
 1. In the virtual machine (VM) on the left, click on the Azure Portal as shown below.
 
-    ![](./media/g5.png)
+    ![](./media/login1.png)
     
 1. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following **Email/Username** and then click on **Next**. 
    
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-    ![](https://github.com/CloudLabsAI-Azure/AIW-SAP-on-Azure/raw/main/media/M2-Ex1-portalsignin-1.png?raw=true)
+    ![](./media/login2.png)
 
 1. Enter the following **Password** and click on **Sign in**. 
    
@@ -40,10 +40,6 @@ In this lab, participants will explore a pre-configured Azure Sentinel workspace
 1. First-time users are often prompted to Stay Signed In, if you see any such pop-up, click on No.
    
 1. If a **Welcome to Microsoft Azure** popup window appears, click Maybe Later to skip the tour.
-
-1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
-
-    ![](./media/g1.png)
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
