@@ -1,5 +1,5 @@
 
-## Lab 05 - Use Repositories in Microsoft Sentinel
+## Lab 08 - Use Repositories in Microsoft Sentinel
 
 ## Lab scenario
 
