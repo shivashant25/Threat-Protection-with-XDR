@@ -65,12 +65,12 @@ You will access to a lab guide which is a reference material to assist you in ge
 
 - Lab 01 - Review and explore sentinel workspace
 - Lab 02 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
-- Lab 03 - Conduct attacks
-- Lab 04 - Create workbooks
-- Lab 05 - Use Repositories in Microsoft Sentinel
-- Lab 06 - Understand Detection Modeling
-- Lab 07 - Create Detections
-- Lab 08 - Investigate an Incident
+- Lab 03 - Understand Detection Modeling
+- Lab 04 - Conduct attacks
+- Lab 05 - Create Detections
+- Lab 06 - Investigate an Incident
+- Lab 07 - Create workbooks
+- Lab 08 - Use Repositories in Microsoft Sentinel
 - Lab 09 - Threat Hunting using Notebooks with Microsoft Sentinel
 - Lab 10 - Mitigate threats using Microsoft Defender for Cloud
 - Lab 11 - Integrate Logic App with Threat Protection and XDR
