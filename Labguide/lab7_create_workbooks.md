@@ -6,9 +6,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 Microsoft Sentinel allows you to create custom workbooks across your data and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
->**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20workbooks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
-
-## Lab objectives (Duration: 30 minutes)
+## Lab objectives
  In this lab, you will Understand following:
  - Task 1: Save and modify a workbook template
  - Task 2: Create a Workbook
@@ -31,11 +29,11 @@ In this task, you will save the Microsoft Sentinel workbook templates.
 
    ![Picture 1](./media/image_10.png)
 
-1. Select the *Templates* tab, search and select the **Azure Activity** template workbook.
+1. Search for and select the **Azure Activity** template workbook. In the right pane, scroll down and select the **View template** button.
 
-   ![Picture 1](./media/image_28.png)
+1. Review the contents of the workbook. It shows insights of your Azure subscription operations by collecting and analyzing the data from the Activity Log.
 
-1. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
+1. You should be back in the Microsoft Sentinel - Workbooks - Templates tab. Scroll down again and select the **Save** button for the Azure Activity workbook.
 
    ![Picture 1](./media/savedactivity.png)
 
@@ -138,7 +136,7 @@ overview of the workbook.
 
 1. Select the **Save** icon, change the *Title* to **My Workbook**.
 
-1. Select the **RG-Defender** resource group if needed and leave other values as default.
+1. Select the **threadprotection-rg** resource group if needed and leave other values as default.
 
 1.  Select **Apply** to commit the changes. 
 
