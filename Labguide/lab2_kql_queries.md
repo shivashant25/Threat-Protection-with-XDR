@@ -6,38 +6,30 @@ You are a Security Operations Analyst working at a company that is implementing 
 ## Lab objectives
  In this lab, you will perform the following:
 
-- Task 2: Initialize the Microsoft Sentinel Workspace.
-- Task 3: Connect the Windows security event connector.
-- Task 4: Enable Microsoft Defender for Cloud
-- Task 5: Protect an On-Premises Server.
-- Task 6: Create Microsoft Sentinel Training Lab Solution.
-- Task 7: Access the KQL testing area.
-- Task 8: Run Basic KQL Statements
-- Task 9: Analyze Results in KQL with the Summarize Operator
-- Task 10: Create visualizations in KQL with the Render Operator
-- Task 11: Build multi-table statements in KQL
+- Task 1: Connect the Windows security event connector
+- Task 2: Enable Microsoft Defender for Cloud
+- Task 3: Protect an On-Premises Server
+- Task 4: Create Microsoft Sentinel Training Lab Solution
+- Task 5: Access the KQL testing area
+- Task 6: Run Basic KQL Statements
+- Task 7: Analyze Results in KQL with the Summarize Operator
+- Task 8: Create visualizations in KQL with the Render Operator
+- Task 9: Build multi-table statements in KQL
+- Task 10: Work with string data in KQL
 
 ## Architecture Diagram
 
   ![Picture 1](./media/part1lab09.png)
-   
-### Task 1: Initialize the Microsoft Sentinel Workspace.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+### Task 1: Connect the Windows security event connector
 
-1. Create, In Add Microsoft Sentinel to a workspace page.
+1. In the Search bar of the Azure portal, type Sentinel, then select Microsoft Sentinel.
 
-1. Select your existing workspace then select **Add**. This could take a few minutes.
+1. select the created workspace from the list.
 
-### Task 2: Connect the Windows security event connector.
+1. On the left menu under the **Configuration** section select the **Data connectors**.
 
-1. On the search bar type **Microsoft Sentinel** and select it
-
-1. select the created workspace
-
-1. On the left menu search for data connectors and click on it
-
-1. You can see there are no connectors installed yet so go to the content hub on the same page
+1. On the data connectors page, You can see there are multiple connectors installed to install more go to the content hub on the same page.
 
 1. On the content hub page search for **Windows security event** and select, Install
 
@@ -49,13 +41,13 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 1. Under configuration choose **Install agent on Azure Windows Virtual Machine** and select **Download & install agent for Azure Windows Virtual machines** 
 
-1. Select the **svm-xxx** virtual machine and click on connect
+1. Select the **svm-xxx** virtual machine and click on connect.
 
 1. Then come back to Configuration and scroll down a bit you can find **Select which events to stream** Click on **All Events**
 
 1. Click on apply changes now if you refresh the data connector page you can see the status connected for **Security events Via Legacy agent**
 
-### Task 4: Enable Microsoft Defender for Cloud
+### Task 2: Enable Microsoft Defender for Cloud
 
 In this task, you will enable and configure Microsoft Defender for Cloud.
 
@@ -77,9 +69,9 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the settings page by selecting the 'X' on the upper right of the page to go back to the **Environment settings** and select the '>' to the left of your subscription.
 
-1. Select the Log Analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
+1. Select the Log Analytics workspace *loganalyticworkspace* to review the available options and pricing.
 
-1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
+1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace loganalyticworkspace was saved successfully!"* notification to appear.
 
     ![Picture 1](./media/SC-200-img333.png)
 
@@ -87,7 +79,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
 
-### Task 5: Protect an On-Premises Server.
+### Task 3: Protect an On-Premises Server
 
 In this task, you will manually install the required agent on the Windows Server.
 
@@ -99,7 +91,7 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select **Upgrade** next to the workspace you created earlier.  This might take a few minutes, wait until you see the notification *"Defender plans for workspace were saved successfully"*.
 
-1. Select **+ Add Servers** next to the workspace you created earlier.
+1. Select **+ Add Servers** next to the workspace.
 
 1. Select **Log Analytics agent instructions**
 
@@ -121,7 +113,7 @@ In this task, you will manually install the required agent on the Windows Server
 
     ![Picture 1](./media/image_29.png)
 
-### Task 6: Create Microsoft Sentinel Training Lab Solution
+### Task 4: Create Microsoft Sentinel Training Lab Solution
 
 In this task, you will create microsoft sentinel training lab solution.
     
@@ -136,7 +128,7 @@ In this task, you will create microsoft sentinel training lab solution.
 
    >**Note**: It will take 3-5 minutes.
 
-### Task 7: Access the KQL testing area.
+### Task 5: Access the KQL testing area
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
@@ -156,7 +148,7 @@ In this task, you will access a Log Analytics environment where you can practice
 
     ![Picture 1](./media/SC-200-img-7.png)
 
-### Task 8: Run Basic KQL Statements
+### Task 6: Run Basic KQL Statements
 
 In this task, you will build basic KQL statements.
 
@@ -292,7 +284,7 @@ In this task, you will build basic KQL statements.
     | project-away ProcessName
     ```
 
-### Task 9: Analyze Results in KQL with the Summarize Operator
+### Task 7: Analyze Results in KQL with the Summarize Operator
 
 In this task, you will build KQL statements to aggregate data. **Summarize** groups the rows according to the **by** group columns, and calculates aggregations over each group.
 
@@ -358,7 +350,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize make_set(Account) by Computer
     ```
 
-### Task 10: Create visualizations in KQL with the Render Operator
+### Task 8: Create visualizations in KQL with the Render Operator
 
 In this task, you will use generate visualizations with KQL statements.
 
@@ -380,7 +372,7 @@ In this task, you will use generate visualizations with KQL statements.
     | render timechart
     ```
 
-### Task 11: Build multi-table statements in KQL
+### Task 9: Build multi-table statements in KQL
 
 In this task, you will build multi-table KQL statements.
 
@@ -435,7 +427,7 @@ In this task, you will build multi-table KQL statements.
     >**Important:** The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
 
 
-### Task 12: Work with string data in KQL
+### Task 10: Work with string data in KQL
 
 In this task, you will work with structured and unstructured string fields with KQL statements.
 
@@ -526,13 +518,13 @@ In this task, you will work with structured and unstructured string fields with 
     
 ## Review
 In this lab, you have completed the following:
-- Created a Log Analytics Workspace
-- Initialized the Microsoft Sentinel Workspace.
-- Connected the Windows security event connector.
-- Enabled Microsoft Defender for Cloud
-- Protected an On-Premises Server.
-- Able to access the KQL testing area.
-- Ran Basic KQL Statements
-- Analyzed Results in KQL with the Summarize Operator
-- Created visualizations in KQL with the Render Operator
-- Built multi-table statements in KQL
+- Connect the Windows security event connector
+- Enable Microsoft Defender for Cloud
+- Protect an On-Premises Server
+- Create Microsoft Sentinel Training Lab Solution
+- Access the KQL testing area
+- Run Basic KQL Statements
+- Analyze Results in KQL with the Summarize Operator
+- Create visualizations in KQL with the Render Operator
+- Build multi-table statements in KQL
+- Work with string data in KQL
