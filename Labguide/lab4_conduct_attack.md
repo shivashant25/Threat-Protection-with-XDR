@@ -2,13 +2,14 @@
 
 ## Lab scenario
 
-You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
+You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Defender.
 
 ## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Persistence Attack with Registry Key Add 
 - Task 2: Command and Control Attack with DNS
-- Task 3: Investigate the Incident in M365 Defender Portal
+- Task 3: Privilege Elevation Attack with User Add
+- Task 4: Investigate the Incident in M365 Defender Portal
 
 ## Architecture Diagram
 
@@ -16,7 +17,7 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ### Task 1: Persistence Attack with Registry Key Add 
 
-1. Follow the instructions to log into WINServer again.
+>**Note:** Perform this task in your LAB-VM.
 
 1. In the search of the task bar, enter *Command*. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
 
@@ -35,6 +36,8 @@ You are going to simulate the attacks that you will later use to detect and inve
     ```
 
 ### Task 2: Command and Control Attack with DNS
+
+>**Note:** Perform this task in your LAB-VM.
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
@@ -102,9 +105,44 @@ You are going to simulate the attacks that you will later use to detect and inve
 
     >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
-### Task 3: Investigate the Incident in M365 Defender Portal
+### Task 3: Privilege Elevation Attack with User Add
 
-In this task, you will logoin to the M365 Defender portal and view the attack which you conducted in the previous task.
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
+
+1. In Azure portal, search for Virtual Machines and login to **s2vm-xxxx** virtual machine with the below admin credentials:
+
+   * Admin Username:
+   * Admin Password:
+
+1. In the search of the taskbar of your **s2vm-xxxx** VM, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
+
+1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
+
+    ```CommandPrompt
+    cd \
+    ```
+    ```CommandPrompt
+    mkdir temp
+    ```
+    ```CommandPrompt
+    cd temp
+    ```
+
+1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
+
+    ```CommandPrompt
+    net user theusernametoadd /add
+    ```
+    ```CommandPrompt
+    net user theusernametoadd ThePassword1!
+    ```
+    ```CommandPrompt
+    net localgroup administrators theusernametoadd /add
+    ```
+
+### Task 4: Investigate the Incident in M365 Defender Portal
+
+In this task, you will login to the M365 Defender portal and view the attacks which were conducted in the previous task.
 
 1. Login to the Microsoft M365 Defender portal (https://security.microsoft.com/) using your Azure username and password.
 
@@ -119,8 +157,21 @@ In this task, you will logoin to the M365 Defender portal and view the attack wh
 
    ![Lab overview.](./media/lab04-task3-incident01.png)
 
+1. Now let us look at each of these incidents to invetigate the attacks performed in the previous tasks. Click on the dropdown to view all the incidents.
+
+   ![Lab overview.](./media/lab04-task3-incident02.png)
+
+1. In the **Suspicious System Network Configuration Discovery** incident, you can see that this alert was created due to running the commands in previous tasks.
+
+   ![Lab overview.](./media/lab04-task3-incident03.png)
+
+1. Similarly, you can also further investigate the other alerts by navigating to **Alerts** tab.
+
+   ![Lab overview.](./media/lab04-task3-alerts.png)
+
 ## Review
 In this lab, you have completed the following:
 - Persistence Attack with Registry Key Add 
 - Command and Control Attack with DNS
+- Privilege Elevation Attack with User Add
 - Investigate the Incident in M365 Defender Portal
