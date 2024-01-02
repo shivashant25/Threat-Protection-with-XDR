@@ -14,7 +14,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
   ![Picture 1](./media/SC200-Lab_Diagrams_Mod3_L1_Ex2.png)
   
-### Task 3: Simulated Attacks
+### Task 1: Simulated Attacks
 
 In this task, you will run two simulated attacks to explore the capabilities of Microsoft Defender for Endpoint.
 
@@ -57,7 +57,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. At the Windows PowerShell, paste and run the provided script. A few seconds later, notepad.exe is started and the simulated attack code is injected into it. The simulated attack code attempts communication to an external IP address simulating the C&C server.
 
-### Task 4: Investigate the Attacks
+### Task 2: Investigate the Attacks
 
 1. In the Microsoft 365 Defender portal select **Incidents & alerts** from the left menu bar, then select **Incidents**.
 
