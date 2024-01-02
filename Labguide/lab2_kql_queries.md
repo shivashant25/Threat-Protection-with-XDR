@@ -24,6 +24,14 @@ You are a Security Operations Analyst working at a company that is implementing 
 ### Task 1: Create Microsoft Sentinel Training Lab Solution
 
 In this task, you will create microsoft sentinel training lab solution.
+
+1. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following **Email/Username** and then click on **Next**. 
+   
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+1. Enter the following **Password** and click on **Sign in**. 
+   
+   * Password: <inject key="AzureAdUserPassword"></inject>
     
 1. In the search bar of the Azure Portal, type Microsoft Sentinal and select Microsoft Sentinel Training Lab Solution. 
     ![Picture 1](./media/image_24.png)
@@ -39,8 +47,6 @@ In this task, you will create microsoft sentinel training lab solution.
 ### Task 2: Access the KQL testing area
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
-
-1. Login to **svm-xxxx** virtual machine as Admin with the password: **Pa55w.rd**.  
 
 1. Go to https://aka.ms/lademo in your browser. Login with the MOD Administrator credentials. 
 
