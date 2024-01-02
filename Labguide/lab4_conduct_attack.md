@@ -157,7 +157,7 @@ In this task, you will login to the M365 Defender portal and view the attacks wh
 
    ![Lab overview.](./media/lab04-task3-incident01.png)
 
-1. Now let us look at each of these incidents to invetigate the attacks performed in the previous tasks. Click on the dropdown to view all the incidents.
+1. Now let us look at each of these incidents to investigate the attacks performed in the previous tasks. Click on the dropdown to view all the incidents.
 
    ![Lab overview.](./media/lab04-task3-incident02.png)
 
