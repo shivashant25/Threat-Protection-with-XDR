@@ -20,27 +20,27 @@
         "Order": 4
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab3_conduct_attack.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab3_understand_detection_modelling.md",
         "Order": 5
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab4_create_workbooks.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab4_conduct_attack.md",
         "Order": 6
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab5_use_repositories.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab5_create_detections.md",
         "Order": 7
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab6_understand_detection_modelling.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab6_investigate_incidents.md",
         "Order": 8
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab7_create_detections.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab7_create_workbooks.md",
         "Order": 9
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab8_investigate_incidents.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Threat-Protection-with-XDR/main/Labguide/lab8_use_repositories.md",
         "Order": 10
       },
       {
