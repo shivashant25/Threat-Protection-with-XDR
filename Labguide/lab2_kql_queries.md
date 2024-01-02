@@ -60,8 +60,6 @@ In this task, you will access a Log Analytics environment where you can practice
 
 1. Next to the first record, select the **>** to expand the information for the row.
 
-1. Next to the first record, select the **>** to expand the information for the row.
-
     ![Picture 1](./media/SC-200-img-7.png)
 
 ### Task 3: Run Basic KQL Statements
