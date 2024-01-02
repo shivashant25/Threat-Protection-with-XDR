@@ -8,7 +8,7 @@ You are going to simulate the attacks that you will later use to detect and inve
  In this lab, you will perform the following:
 - Task 1: Persistence Attack with Registry Key Add 
 - Task 2: Command and Control Attack with DNS
-- Task 3: Privilege Elevation Attack with User Add
+- Task 3: Investigate the Incident in M365 Defender Portal
 
 ## Architecture Diagram
 
@@ -102,50 +102,25 @@ You are going to simulate the attacks that you will later use to detect and inve
 
     >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
-### Task 3: Privilege Elevation Attack with User Add
+### Task 3: Investigate the Incident in M365 Defender Portal
 
-In this task, you will perform attacks on the host connected with Azure Arc that has the Azure Monitor Agent configured.
+In this task, you will logoin to the M365 Defender portal and view the attack which you conducted in the previous task.
 
->**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
+1. Login to the Microsoft M365 Defender portal (https://security.microsoft.com/) using your Azure username and password.
 
-1. Go to Hyper-V manager. Connect to WINSERVER virtual machine.
+   * Username:
+   * Password:
 
-1. Login to WINSERVER virtual machine as Admin with the password: **Password.1!!**.  
+1. Once you have logged into M365 Defender portal, navigate to **Incidents**(1) from the sidebar menu and view the newly created incident named **Multi-stage incident involving Execution & Discovery on one endpoint**(2).
 
-    >**Important:** The lab *SAVE* functionality can cause WINServer to become disconnected from Azure Arc. A reboot will solve the issue. 
+   ![Lab overview.](./media/lab04-task3-incident.png)
 
-1. Select **Start** in Windows. Then **Power**, next **Restart**.
+1. Click on the incident to investigate on the further details.
 
-1. Follow the instructions to log into WINServer again.
-
-1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
-
-1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
-
-    ```CommandPrompt
-    cd \
-    ```
-    ```CommandPrompt
-    mkdir temp
-    ```
-    ```CommandPrompt
-    cd temp
-    ```
-
-1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
-
-    ```CommandPrompt
-    net user theusernametoadd /add
-    ```
-    ```CommandPrompt
-    net user theusernametoadd ThePassword1!
-    ```
-    ```CommandPrompt
-    net localgroup administrators theusernametoadd /add
-    ```
+   ![Lab overview.](./media/lab04-task3-incident01.png)
 
 ## Review
 In this lab, you have completed the following:
 - Persistence Attack with Registry Key Add 
 - Command and Control Attack with DNS
-- Privilege Elevation Attack with User Add
+- Investigate the Incident in M365 Defender Portal
