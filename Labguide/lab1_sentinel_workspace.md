@@ -8,8 +8,6 @@ In this lab, participants will explore a pre-configured Azure Sentinel workspace
  In this lab, you will perform the following:
  - Task 1: Log in to Azure Portal and verify the pre-deployed resources
  - Task 2: Explore Sentinel workspace
- - Task 3: Simulated Attacks
- - Task 4: Investigate the Attacks
 
 ### Exercise 1: Exploring a Pre-Created Azure Sentinel Workspace
 
