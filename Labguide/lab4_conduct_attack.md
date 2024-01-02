@@ -146,8 +146,8 @@ In this task, you will login to the M365 Defender portal and view the attacks wh
 
 1. Login to the Microsoft M365 Defender portal (https://security.microsoft.com/) using your Azure username and password.
 
-   * Username:
-   * Password:
+   * Username: <inject key="AzureAdUserEmail"></inject>
+   * Password: <inject key="AzureAdUserPassword"></inject>
 
 1. Once you have logged into M365 Defender portal, navigate to **Incidents**(1) from the sidebar menu and view the newly created incident named **Multi-stage incident involving Execution & Discovery on one endpoint**(2).
 
