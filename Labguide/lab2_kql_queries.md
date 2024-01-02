@@ -78,20 +78,16 @@ In this task, you will build basic KQL statements.
     search "err"
     ```
 
-    >**Note**: It will taskes some time to reflect, you can move to other command check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**.
+    >**Note**: It will take some time to reflect, you can move to other command and check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**.
 
     ![Picture 1](./media/SC-200-img9.png)
-
-    >**Note**: It will taskes some time to reflect, you can move to other command check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**.
 
 1. The following statement demonstrates **search** across tables listed within the **in** clause. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     search in (SecurityEvent,SecurityAlert,A*) "err"
     ```
-    >**Note**: It will taskes some time to reflect, you can move to other command check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**
-
-    >**Note**: It will taskes some time to reflect, you can move to other command check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**
+    >**Note**: It will take some time to reflect, you can move to other command and check this later. *Hint*: If the above command is not getting output replace **"err"** to **"new"**
 
 1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
