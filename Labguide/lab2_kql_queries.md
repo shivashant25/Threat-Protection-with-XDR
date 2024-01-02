@@ -40,9 +40,9 @@ In this task, you will create microsoft sentinel training lab solution.
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Go-to Microsoft Sentinel and select your log analytics workspace.
+1. Login to **svm-xxxx** virtual machine as Admin with the password: **Pa55w.rd**.  
 
-1. On the left menu click on **logs** close if any tutorial window pops up click on 'X'.
+1. Go to https://aka.ms/lademo in your browser. Login with the MOD Administrator credentials. 
 
 1. Explore the available tables listed in the tab on the left side of the screen.
 
@@ -51,6 +51,8 @@ In this task, you will access a Log Analytics environment where you can practice
     ```KQL
     SecurityEvent
     ```
+
+1. Next to the first record, select the **>** to expand the information for the row.
 
 1. Next to the first record, select the **>** to expand the information for the row.
 
