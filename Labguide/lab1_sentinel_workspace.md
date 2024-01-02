@@ -49,7 +49,7 @@ Sentinel workspace is a centralized platform by Microsoft Azure for managing, in
 
 1. Explore the Overview page to get a summary of the workspace, including incidents, alerts, health, and other essential information.
 
-   ![](./media/07.png)
+   ![](./media/lab2.1.png)
 
 1. Navigate to "Data connectors" on the left sidebar.
 
@@ -57,13 +57,15 @@ Sentinel workspace is a centralized platform by Microsoft Azure for managing, in
 
    ![](./media/dataconnector.png)
 
-1. Under the threat management section select **Incidents** from the left panel to review detected security incidents and alerts.
+1. Under the **threat management** section select **Incidents** from the left panel to review detected security incidents and alerts.
 
-1. Select the Status filter and click on **Select all** checkbox to see all the new,active and closed incidents.
+1. Select the status filter next to the search space and click on **Select all** checkbox to see all the new,active and closed incidents.
 
-    ![](./media/05.png)
+    ![](./media/lab2.2.png)
 
 1. Select the **Informational** incident from the list to view details, and take necessary actions.
+
+    ![](./media/lab2.3.png)
 
 ## Review
 In this lab you have completed:
