@@ -8,6 +8,7 @@ In this lab, participants will explore a pre-configured Azure Sentinel workspace
  In this lab, you will perform the following:
  - Task 1: Log in to Azure Portal and verify the pre-deployed resources
  - Task 2: Explore Sentinel workspace
+ - Task 3: Onboard a Device
 
 ### Exercise 1: Exploring a Pre-Created Azure Sentinel Workspace
 
@@ -113,3 +114,4 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 In this lab you have completed:
  - Log in to Azure Portal and verify the pre-deployed resources
  - Explore Sentinel workspace
+ - Onboard a Device
