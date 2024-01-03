@@ -21,34 +21,105 @@ You are a Security Operations Analyst working at a company that is implementing 
 
   ![Picture 1](./media/part1lab09.png)
 
-### Task 1: Create Microsoft Sentinel Training Lab Solution
+### Task 1: Connect the Windows security event connector
 
-In this task, you will create microsoft sentinel training lab solution.
+1. On the search bar type **Microsoft Sentinel** and select.
 
-1. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following **Email/Username** and then click on **Next**. 
-   
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+1. select the created workspace log Analytics.
 
-1. Enter the following **Password** and click on **Sign in**. 
-   
-   * Password: <inject key="AzureAdUserPassword"></inject>
-    
-1. In the search bar of the Azure Portal, type Microsoft Sentinal and select Microsoft Sentinel Training Lab Solution. 
-    ![Picture 1](./media/image_24.png)
+1. On the left menu under the Content management section select **Content hub**.
 
-1. Click on create, select resource group and workspace.
+1. On the content hub page search for **Windows security event** and select, Install
 
-1. Click on next and give Display name as 'Investigation Insights'.
+1. Once you receive the notification of successful installation go back to the Data connector page and click on refresh.
 
-1. Click on Review + create and click on create.
+1. You can see **Security events Via Legacy agent** and **windows security events via AMA**
 
-   >**Note**: It will take 3-5 minutes.
+1. Select **Security events Via Legacy agent** and click on **open connector page**
+
+1. Under configuration choose **Install agent on Azure Windows Virtual Machine** and select **Download & install agent for Azure Windows Virtual machines** 
+
+1. Select the **svm-xxxx** virtual machine and click on connect.
+
+1. Then come back to Configuration and scroll down a bit you can find **Select which events to stream** Click on **All Events**
+
+1. Click on apply changes now if you refresh the data connector page you can see the status connected for **Security events Via Legacy agent**
+
+### Task 2: Enable Microsoft Defender for Cloud
+
+In this task, you will enable and configure Microsoft Defender for Cloud.
+
+1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+
+1. click the left menu and click on **Getting started**
+
+1. On the **Getting Started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for 2-5 minutes to complete it, as it takes time.
+
+1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
+
+1. Click on the subscription (or equivalent name in your Language). 
+
+1. Review the Azure resources that are now protected with the Defender for Cloud plans.
+
+1. Select the **Settings & monitoring** tab from the Settings area (next to Save).
+
+1. Review the monitoring extensions. Confirm that **Log Analytics agent/Azure Monitor agent** is **Off**. Close the Settings & monitoring page by selecting the 'X' on the upper right of the page.
+
+1. Close the settings page by selecting the 'X' on the upper right of the page to go back to the **Environment settings** and select the '>' to the left of your subscription.
+
+1. Select the Log Analytics workspace *loganalyticworkspace* to review the available options and pricing.
+
+1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace loganalyticworkspace was saved successfully!"* notification to appear.
+
+    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
+
+1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
+
+### Task 3: Protect an On-Premises Server.
+
+In this task, you will manually install the required agent on the Windows Server.
+
+1.  Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
+
+1. Select the **Get Started** tab.
+
+1. Scroll down and select **Configure** under the *Add non-Azure servers* section.
+
+      >**Note:** Non-Azure servers is use the Log Analytics agent to extend Microsoft Defender for Cloud capabilities to servers running outside of Azure, including resources running on-premises and in other clouds.
+
+1. Select **Upgrade** next to the workspace you created earlier.  This might take a few minutes, wait until you see the notification *"Defender plans for workspace were saved successfully"*.
+
+    ![Picture 1](./media/lab-3xdr.png)
+
+1. Select **+ Add Servers** next to the workspace you created earlier.
+
+    ![Picture 1](./media/lab-2xdr.png)
+
+1. Select **Log Analytics agent instructions**
+
+1. Select **Download Windows Agent (64 bit)**.
+
+1. Select **Open file** to run the downloaded *MMASetup-AMD64.exe* file.
+
+   >**Note** If it is already installed it asks for "Repair" or "remove" select **Repair** then click on next then click on **install**, it will take 2-3 minutes to install.
+
+1. Select **Next** until the wizard page for **Agent Setup Options** appears, Select **Connect the Agent to Azure Log Analytics (OMS)**, then select **Next**.
+
+1. Copy and paste the **Workspace ID** and **Primary Key** values in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
+
+1. Continue with the Install. Select **Finish** when complete.
+
+1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from the general section.
+
+1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
 
 ### Task 2: Access the KQL testing area
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Go to https://aka.ms/lademo in your browser. Login with the MOD Administrator credentials. 
+1. Go-to Microsoft Sentinel and select your **log analytics workspace**.
+
+1. On the left menu click on **logs** close if any tutorial window pops up click on 'X'.
 
 1. Explore the available tables listed in the tab on the left side of the screen.
 
