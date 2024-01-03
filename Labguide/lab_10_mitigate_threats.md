@@ -11,7 +11,6 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ## Architecture Diagram
 
-  ![Picture 1](./media/SC200-Lab_Diagrams_Mod3_L1_Ex2.png)
   
 ### Task 1: Manage Incidents
 
