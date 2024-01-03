@@ -9,13 +9,12 @@ You are a Security Operations Analyst working at a company that is implementing 
 - Task 1: Connect the Windows security event connector
 - Task 2: Enable Microsoft Defender for Cloud
 - Task 3: Protect an On-Premises Server
-- Task 4: Create Microsoft Sentinel Training Lab Solution
-- Task 5: Access the KQL testing area
-- Task 6: Run Basic KQL Statements
-- Task 7: Analyze Results in KQL with the Summarize Operator
-- Task 8: Create visualizations in KQL with the Render Operator
-- Task 9: Build multi-table statements in KQL
-- Task 10: Work with string data in KQL
+- Task 4: Access the KQL testing area
+- Task 5: Run Basic KQL Statements
+- Task 6: Analyze Results in KQL with the Summarize Operator
+- Task 7: Create visualizations in KQL with the Render Operator
+- Task 8: Build multi-table statements in KQL
+- Task 9: Work with string data in KQL
 
 ## Architecture Diagram
 
@@ -113,7 +112,7 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
 
-### Task 2: Access the KQL testing area
+### Task 4: Access the KQL testing area
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
@@ -133,7 +132,7 @@ In this task, you will access a Log Analytics environment where you can practice
 
     ![Picture 1](./media/SC-200-img-7.png)
 
-### Task 3: Run Basic KQL Statements
+### Task 5: Run Basic KQL Statements
 
 In this task, you will build basic KQL statements.
 
@@ -265,7 +264,7 @@ In this task, you will build basic KQL statements.
     | project-away ProcessName
     ```
 
-### Task 4: Analyze Results in KQL with the Summarize Operator
+### Task 6: Analyze Results in KQL with the Summarize Operator
 
 In this task, you will build KQL statements to aggregate data. **Summarize** groups the rows according to the **by** group columns, and calculates aggregations over each group.
 
@@ -331,7 +330,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize make_set(Account) by Computer
     ```
 
-### Task 5: Create visualizations in KQL with the Render Operator
+### Task 7: Create visualizations in KQL with the Render Operator
 
 In this task, you will use generate visualizations with KQL statements.
 
@@ -353,7 +352,7 @@ In this task, you will use generate visualizations with KQL statements.
     | render timechart
     ```
 
-### Task 6: Build multi-table statements in KQL
+### Task 8: Build multi-table statements in KQL
 
 In this task, you will build multi-table KQL statements.
 
@@ -408,7 +407,7 @@ In this task, you will build multi-table KQL statements.
     >**Important:** The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
 
 
-### Task 7: Work with string data in KQL
+### Task 9: Work with string data in KQL
 
 In this task, you will work with structured and unstructured string fields with KQL statements.
 
@@ -502,7 +501,6 @@ In this lab, you have completed the following:
 - Connect the Windows security event connector
 - Enable Microsoft Defender for Cloud
 - Protect an On-Premises Server
-- Create Microsoft Sentinel Training Lab Solution
 - Access the KQL testing area
 - Run Basic KQL Statements
 - Analyze Results in KQL with the Summarize Operator
