@@ -23,7 +23,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Select your Microsoft Sentinel Workspace.
 
-1. Select **Logs** 
+1. Select **Logs** from the left menu.
 
 1. Enter the following KQL Statement in the *New Query 1* space:
 
@@ -42,11 +42,13 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Review the different results. You have now identified PowerShell requests that are running in your environment.
 
-1. Select the checkbox of the results that shows the **azureuser** SubjectUsername.
+    ![Picture 1](./media/lab9xdr1.png)
+
+1. Select the checkbox of the results that shows the **demouser** SubjectUsername.
 
 1. In the middle command bar, select the **Add bookmark** button.
 
-   ![Picture 1](./media/logss.png)
+   ![Picture 1](./media/lab9xdr2.png)
 
 1. Select **+ Add new entity** under *Entity mapping*.
 
@@ -56,13 +58,17 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Go back to the *Add bookmark* blade, and the select **Create**. We will map this bookmark to an incident later.
 
+   ![Picture 1](./media/lab9xdr3.png)
+
 1. Close the *Logs* window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
 
 1. Select your Microsoft Sentinel workspace again and select the **Hunting** page under the *Threat Management* area.
 
-1. Select the **Queries** tab and then **+ New Query** from the command bar.
+1. Select the **Queries (1)** tab and then **+ New Query (2)** from the command bar.
 
-1. In the *Create custom query* window, for the *Name* enter **PowerShell Hunt**.
+   ![Picture 1](./media/lab9xdr4.png)
+
+1. In the *Create hunting query* window, for the *Name* enter **PowerShell Hunt**.
 
 1. For the *Custom query* enter the following KQL statement:
 
@@ -86,19 +92,21 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Scroll down and under *Tactics & Techniques* select **Command and Control** and then select **Create** to create the hunting query.
 
+    ![Picture 1](./media/lab9xdr5.png)
+
 1. In the *"Microsoft Sentinel - Hunting"* blade, search for the query you just created in the list, *PowerShell Hunt*.
 
 1. Select **PowerShell Hunt** from the list.
 
-   ![Picture 1](./media/huntingg.png)
-
-1. Review the number of results in the middle pane under the *Results* column.
-
 1. Select the **View Results** button from the right pane. The KQL query will automatically run.
+
+   ![Picture 1](./media/lab9xdr6.png)
 
 1. Close the *Logs* window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
 
 1. Right-click the **PowerShell Hunt** query and select **Add to livestream**. **Hint:** This also can be done by sliding right and selecting the ellipsis **(...)** at the end of the row to open a context menu.
+
+   ![Picture 1](./media/lab9xdr7.png)
 
 1. Review that the *Status* is now *Running*. This will be running every 30 seconds in the background, and you will receive a notification in the Azure Portal (bell icon) when a new result is found. 
 
@@ -108,9 +116,9 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. On the right pane, scroll down and select the **Investigate** button. **Hint:** It might take a couple of minutes to show the investigation graph.
 
-   ![Picture 1](./media/bookmarkinvestigate.png)
+   ![Picture 1](./media/lab9xdr8.png)
 
-1. Explore the Investigation graph just like you did the previous module. Notice the high number of *Related alerts* for *WINServer*.
+1. Explore the Investigation graph. Notice the high number of *Related alerts* for *svm-xxxx*.
 
 1. Close the *Investigation* graph window by selecting the **X** in the top-right of the window. 
 
