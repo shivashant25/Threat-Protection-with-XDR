@@ -16,7 +16,7 @@ In this lab, you will understand the attacks and about Detection Modeling
 
 ## Architecture Diagram
 
-  ![Lab overview.](./media/sc-200ex5.png)
+  ![Lab overview.](./media/lab3-AD.png)
 
 ### Task 1: Understand the Attacks
 
