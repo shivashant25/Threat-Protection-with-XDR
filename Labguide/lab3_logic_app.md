@@ -56,7 +56,7 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
 1. Leave **(US) East US** as the default value for *Region*.
 
-1. Rename the *Playbook Name* to "PostMessageTeams-OnIncident" and select **Review + create**.
+1. Rename the *Playbook Name* to **PostMessageTeams-OnIncident** and select **Review + create**.
 
 1. Now select **Create**.
 
@@ -73,7 +73,7 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the **Automation** from the Configuration area and then select the **Active Playbooks** tab.
 
-1. Select the **PostMessageTeams-OnAlert** playbook.
+1. Select the **PostMessageTeams-OnIncident** playbook.
 
 1. On the Logic App page for *PostMessageTeams-OnAlert*, in the center menu, select **Edit**.
 
