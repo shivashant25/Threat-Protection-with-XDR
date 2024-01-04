@@ -1,4 +1,4 @@
-## Lab 04 - Understand Detection Modeling
+## Lab 05 - Understand Detection Modeling
 
 ### Lab Scenario
 
