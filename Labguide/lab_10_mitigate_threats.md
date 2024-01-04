@@ -6,14 +6,48 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ## Lab objectives
  In this lab, you will perform the following in M365 Defender portal:
-- Task 1: Manage Incidents
-- Task 2: Investigate Alerts
-- Task 3: Apply Microsoft Defender for Office 365 preset security policies
+- Task 1: Create a Group
+- Task 2: Manage Incidents
+- Task 3: Investigate Alerts
+- Task 4: Apply Microsoft Defender for Office 365 preset security policies
+- Task 5: Connect the Microsoft Defender for Cloud connector
+- Task 6: Activate a Microsoft Security Rule
 
 ## Architecture Diagram
 
+
+### Task 1: Create a Group 
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+
+1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
+
+1. In the Search bar of the Azure portal, search and select **Azure Active Directory** or **Microsoft Entra ID**.
+
+1. Select **Groups** and then click on **New group**.
+
+1. Enter the below details for New group page :
+
+   |Setting|Value|
+    |---|---|
+    |Group Type| **Microsoft 365** |
+    |Group Name| **Sg-IT** |
+    |Azure AD roles can be assigned to the group| **Yes** |
+
+1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
+
+1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
+
+   **Note**: Make sure you have selected **Group type** as Microsoft 365.
+
+1. Select **Create** and click on **Yes**. 
+
   
-### Task 1: Manage Incidents
+### Task 2: Manage Incidents
 
 In this task, you will manage the incidents in M365 Defender portal.
 
@@ -53,7 +87,7 @@ In this task, you will manage the incidents in M365 Defender portal.
 
    ![Lab overview.](./media/lab10-task1-summary.png)
 
-### Task 2: Investigate Alerts
+### Task 3: Investigate Alerts
 
 In this task you will investigate and mitigate the alerts through recommendations by Microsoft Defender.
 
@@ -61,7 +95,7 @@ In this task you will investigate and mitigate the alerts through recommendation
 
    ![Lab overview.](./media/lab10-task2-alerts.png)
 
-1. You can click on any of these alerts to view the full details. Click on the alert named **Suspicious System Network Configuration Discovery**. You will now investigate and mitigate this alert.
+1. You can click on any of these alerts to view the full details. Click on the alert named **Suspicious System Network Configuration Discovery**.
 
 1. Click on **Maximize** to view the full alert details.
 
@@ -75,7 +109,7 @@ In this task you will investigate and mitigate the alerts through recommendation
 
    ![Lab overview.](./media/lab10-task2-alerts-max02.png)
 
-1. Click on the ellipses and then select **Go Hunt**. This will redirect you to a new tab of **Advanced Hunting** where you can run the query and get the results to mitigate the alert.
+1. Click on the ellipses and then select **Go Hunt**. This will redirect you to a new tab of **Advanced Hunting** where you can run the query and get the results.
 
    ![Lab overview.](./media/lab10-task2-alerts-hunt.png)
 
@@ -89,15 +123,15 @@ In this task you will investigate and mitigate the alerts through recommendation
 
    ![Lab overview.](./media/lab10-task2-alerts-deep-analysis01.png)
 
-1. This process will take sometime, after which you can see the deep analysis of the alert and further mitigate it.
+1. This process will take sometime, after which you can see the deep analysis of the alert and further investigate it.
 
    ![Lab overview.](./media/lab10-task2-alerts-deep-analysis02.png)
 
-1. Microsoft Defender also provides recommendations to mitigate the alerts. On the alert details page, click on **Recommendations** tab to view all the recommendations on mitigating this alert.
+1. Microsoft Defender also provides recommendations to mitigate the alerts. On the alert details page, click on **Recommendations** tab to view all the recommendations.
 
    ![Lab overview.](./media/lab10-task2-alerts-recommendations.png)
 
-### Task 3: Apply Microsoft Defender for Office 365 preset security policies
+### Task 4: Apply Microsoft Defender for Office 365 preset security policies
 
 1. From the navigation menu, under Email & Collaboration area, select **Policies & rules**(1) and select **Threat policies**(2).
 
@@ -153,9 +187,47 @@ In this task you will investigate and mitigate the alerts through recommendation
 
    ![Lab overview.](./media/lab10-task3-strict-policies04.png)
 
+### Task 5: Connect the Microsoft Defender for Cloud connector.
+
+ In this task, you will connect the Microsoft Defender for Cloud connector.
+
+ 1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
+
+ 1. Select the **Open connector page** on the connector information blade.
+
+ 1. In the **Configuration** area, under Subscription, select the checkbox for the "Azure Pass - Sponsorship" subscription and slide the **Status** option to the right to indicate **Connected**.
+
+1. The "Status" should be now *Connected* and "Bi-directional sync" should be *Enabled*.
+
+1. Scroll down and under the "Create incidents - Recommended!" area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
+
+### Task 6: Activate a Microsoft Security Rule
+
+In this task, you will activate a Microsoft Security rule.
+
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+1. Select your Microsoft Sentinel Workspace you created in the previous labs.
+
+1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
+
+1. Select the **Create incidents based on Microsoft Defender for Cloud**.
+
+1. On the right blade, select the **Edit** button.
+
+1. Scroll down the page and under "Analytics rule logic - Filter by Severity", select the *Custom* drop-down list.
+
+1. Unselect **Low** for the severity level and go back to the rule.
+
+1. Select the **Next: Automated response** button and then select **Next: Review** button.
+
+1. Review the changes made and select the **Save** button. The Analytics rule will be saved.
 
 ## Review
 In this lab, you have completed the following:
+- Create a Group
 - Manage Incidents
 - Investigate Alerts
 - Apply Microsoft Defender for Office 365 preset security policies
+- Connect the Microsoft Defender for Cloud connector
+- Activate a Microsoft Security Rule
