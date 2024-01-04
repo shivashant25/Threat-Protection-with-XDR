@@ -1,4 +1,4 @@
-## Lab 05 - Create Detections
+## Lab 06 - Create Detections
 
 ## Lab scenario
 
