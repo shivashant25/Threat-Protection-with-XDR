@@ -7,7 +7,8 @@ You're a Security Operations Analyst working at a company that implemented Micro
 ## Lab objectives
  In this lab, you will perform the following in M365 Defender portal:
 - Task 1: Manage Incidents
-- Task 2: Investigate & Mitigate the Alerts
+- Task 2: Investigate Alerts
+- Task 3: Apply Microsoft Defender for Office 365 preset security policies
 
 ## Architecture Diagram
 
@@ -52,7 +53,7 @@ In this task, you will manage the incidents in M365 Defender portal.
 
    ![Lab overview.](./media/lab10-task1-summary.png)
 
-### Task 2: Investigate & Mitigate the Alerts
+### Task 2: Investigate Alerts
 
 In this task you will investigate and mitigate the alerts through recommendations by Microsoft Defender.
 
@@ -96,7 +97,65 @@ In this task you will investigate and mitigate the alerts through recommendation
 
    ![Lab overview.](./media/lab10-task2-alerts-recommendations.png)
 
+### Task 3: Apply Microsoft Defender for Office 365 preset security policies
+
+1. From the navigation menu, under Email & Collaboration area, select **Policies & rules**(1) and select **Threat policies**(2).
+
+   ![Lab overview.](./media/lab10-task3-threat-policies.png)
+
+1. On the Threat policies dashboard, select **Preset Security Policies**.
+
+   ![Lab overview.](./media/lab10-task3-preset-policies.png)
+
+1. Under Standard protection, select **Manage protection settings**. Hint: If you see this option grayed out, refresh your browser using Ctrl+F5.
+
+   ![Lab overview.](./media/lab10-task3-std-policies.png)
+
+1. In the Apply Exchange Online Protection section, select **Specific recipients** and under **Domains** start writing your tenant’s domain name, select it, and then select **Next**.
+
+   ![Lab overview.](./media/lab10-task3-std-policies01.png)
+
+1. In the Apply Defender for Office 365 protection section, apply the same configuration as the previous step and select Next. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+
+   ![Lab overview.](./media/lab10-task3-std-policies02.png)
+
+1. In the Impersonation protection section, select **Next** four times (4x) to continue.
+
+   ![Lab overview.](./media/lab10-task3-std-policies03.png)
+
+1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+
+   ![Lab overview.](./media/lab10-task3-std-policies04.png)
+
+1. Read the content under Review and confirm your changes and select **Confirm** to apply the changes and then select **Done** to finish.
+
+   ![Lab overview.](./media/lab10-task3-std-policies05.png)
+
+1. Under Strict protection, select **Manage protection settings**. Hint: Strict protection is found under “Email & Collaboration - Policies & rules - Threat policies - Preset security policies”.
+
+   ![Lab overview.](./media/lab10-task3-strict-policies.png)
+
+1. In the Apply Exchange Online Protection, select **Specific recipients** and under **Groups**, select your group, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+
+   ![Lab overview.](./media/lab10-task3-strict-policies01.png)
+
+1. In the Apply Defender for Office 365 protection section, apply the same configuration as the previous step and select Next. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+
+   ![Lab overview.](./media/lab10-task3-strict-policies02.png)
+
+1. In the Impersonation protection section, select **Next** four times (4x) to continue.
+
+1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+
+   ![Lab overview.](./media/lab10-task3-strict-policies03.png)
+
+1. Read the content under Review and confirm your changes and select **Confirm** to apply the changes and then select **Done** to finish.
+
+   ![Lab overview.](./media/lab10-task3-strict-policies04.png)
+
+
 ## Review
 In this lab, you have completed the following:
 - Manage Incidents
-- Investigate & Mitigate the Alerts
+- Investigate Alerts
+- Apply Microsoft Defender for Office 365 preset security policies
