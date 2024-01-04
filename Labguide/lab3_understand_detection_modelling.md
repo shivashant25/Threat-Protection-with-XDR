@@ -92,17 +92,13 @@ Until ($TimeNow -ge $RunEnd)
 
 ### Task 2: Understand Detection Modeling.
 
-The attack-detect configuration cycle used in this lab represents all data sources even though you are only focused on two specific data sources.
+Microsoft Sentinel Analytics provides an intelligent solution that you can use to detect potential threats and vulnerabilities in your organizations. You can detect previously uncovered threats and rapidly remediate threats with built-in orchestration and automation in Microsoft Sentinel.
 
-To build a detection, you first start with building a KQL statement.  Since you will attack a host, you will have representative data to start building the KQL statement.
+Detection modeling in XDR involves the creation and refinement of rules, algorithms, and analytical processes to identify and respond to security threats across various endpoints, networks, and cloud environments. XDR integrates data from multiple sources to provide a comprehensive and correlated view of potential security incidents.
 
-The following lab runs the same attacks on a Windows host with Defender for Endpoint installed and Windows with Sysmon installed.  As you build the detections, you will see the difference in data normalization for each.
+You can detect the threats or incidents using various tools in Azure Sentinel. For example, by configuring various Data Connectors in Azure Sentinel, you will get the incidents/alerts through the connected providers; run queries in the Log Analytics workspace to detect these potential alerts which you will learn in the upcoming labs.
 
-After you have the KQL statement, you create the Analytical Rule.
-
-Once the rule triggers and creates the alerts and incidents, you then investigate to decide if you are providing fields that help Security Operations Analysts in their investigation.
-
-Next, make any other changes to the analytics rule.
+Using Microsoft Sentinel Analytics, you can analyze historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Microsoft Sentinel Analytics analyzes data from various sources to identify correlations and anomalies.
 
 ## Review
 In this lab
