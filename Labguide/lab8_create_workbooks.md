@@ -1,4 +1,4 @@
-## Lab 07 - Create workbooks
+## Lab 08 - Create workbooks
 
 ## Lab scenario
 
