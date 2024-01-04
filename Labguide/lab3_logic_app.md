@@ -1,4 +1,4 @@
-# Lab 11 - Integrate Logic App with Threat Protection and XDR
+# Lab 03 - Integrate Logic App with Threat Protection and XDR
 
 ## Lab scenario
 
@@ -6,10 +6,9 @@ The integration of a Logic App with Threat Protection involves configuring trigg
 
 ## Lab objectives
  In this lab, you will perform the following:
- - Task 1: Create an Azure logic app
- - Task 2: Design Your Logic App Workflow
- - Task 3: Create a Search
- - Task 4: Explore Notebooks
+ - Task 1: Create a Security Operations Center Team in Microsoft Teams
+ - Task 2: Create a Playbook in Microsoft Sentinel
+ - Task 3: Update a Playbook in Microsoft Sentinel
  
 ## Estimated timing: 60 minutes
 
@@ -64,7 +63,7 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
     **Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple minutes to deploy.
 
 
-### Task 7: Update a Playbook in Microsoft Sentinel.
+### Task 3: Update a Playbook in Microsoft Sentinel.
 
 In this task, you will update the new playbook you created with the proper connection information.
 
@@ -101,3 +100,9 @@ In this task, you will update the new playbook you created with the proper conne
    ![Picture 1](../Media/SC-200-img13.png)
 
 1. Select **Save** on the command bar.
+
+## Review
+ In this lab, you will perform the following:
+ - Create a Security Operations Center Team in Microsoft Teams
+ - Create a Playbook in Microsoft Sentinel
+ - Update a Playbook in Microsoft Sentinel
